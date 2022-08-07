@@ -1,7 +1,7 @@
 #loads libraries
 import math
 import time
-#instatiates boot sequence
+#generates hardware/global variables
 cache = "test"
 powerButton = True
 #bootloader code
@@ -14,7 +14,7 @@ def bootScreen():
         print(inputTest)
         bootScreen()
     if startQuestion == "boot os":
-        import simplisticOSshell
+        import loginpage
     else: 
         bootScreen()
         
