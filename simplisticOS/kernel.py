@@ -14,7 +14,7 @@ def bootScreen():
         print(inputTest)
         bootScreen()
     if startQuestion == "boot os":
-        import loginpage
+        import homescreen
     else: 
         bootScreen()
         
