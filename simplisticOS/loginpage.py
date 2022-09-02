@@ -2,7 +2,7 @@ import tkinter as tk
 
 root = tk.Tk()
 
-root.geometry("100x100")
+
 
 def close():
     root.destroy()
