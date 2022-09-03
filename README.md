@@ -12,7 +12,7 @@ And are downloaded and deleted every time they are opened
 Or closed.
 
 
-When booted off the computer sores the domains in the cache 
+When booted off the computer stores the domains in the cache 
 And redownloads the system files to remove any extra files or 
 Viruses.
 
