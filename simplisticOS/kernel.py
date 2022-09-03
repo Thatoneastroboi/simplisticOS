@@ -1,6 +1,5 @@
 #loads libraries
-import math
-import time
+import tkinter
 #generates hardware/global variables
 cache = "test"
 powerButton = True
@@ -10,8 +9,16 @@ def bootScreen():
     print("bios check or boot os")
     startQuestion = input()
     if startQuestion == "bios check":
-        inputTest = input()
-        print(inputTest)
+        bioscheck = input()
+        root = tkinter.Tk()
+        def close():
+            root.destroy()
+        label = tkinter.Label(root, text=bioscheck)
+        stop = tkinter.Button(root, text="close", command=close)
+        root.geometry("100x100")
+        label.pack()
+        stop.pack()
+        root.mainloop()
         bootScreen()
     if startQuestion == "boot os":
         import homescreen
@@ -19,13 +26,9 @@ def bootScreen():
         bootScreen()
         
 
-def boot():
-    test = True
-    print("system booting")
-    bootScreen()
  #checks if system/internalOS is on  
 if powerButton == True:
-    boot()
+    bootScreen()
 #instatiates the scheduler
 def scheduler():
     processes = ["testprocess1", "testprocess2", "testprocess3"]
